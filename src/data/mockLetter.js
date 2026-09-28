@@ -25,7 +25,7 @@ export const mockFatha = [
   { id: 23, base: "لَ", start: "لَـ", middle: "ـلَـ", end: "ـلَ", pron: "la" },
   { id: 24, base: "مَ", start: "مَـ", middle: "ـمَـ", end: "ـمَ", pron: "ma" },
   { id: 25, base: "نَ", start: "نَـ", middle: "ـنَـ", end: "ـنَ", pron: "na" },
-  { id: 26, base: "هَ", start: "هَـ", middle: "ـهَـ", end: "ـهَ", pron: "Ha" },
+  { id: 26, base: "ھَ", start: "هَـ", middle: "ـهَـ", end: "ـهَ", pron: "Ha" },
   { id: 27, base: "وَ", start: "وَ", middle: "ـوَ", end: "ـوَ", pron: "wa" },
   { id: 28, base: "يَ", start: "يَـ", middle: "ـيَـ", end: "ـيَ", pron: "ya" }
 ];
