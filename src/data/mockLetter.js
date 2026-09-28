@@ -61,3 +61,35 @@ export const mockKasra = [
   { id: 27, base: "وِ", start: "وِ", middle: "ـوِ", end: "ـوِ", pron: "wi" },
   { id: 28, base: "يِ", start: "يِـ", middle: "ـيِـ", end: "ـيِ", pron: "yi" }
 ];
+
+// Données de la Domma
+export const mockDomma = [
+  { id: 1, base: "أُ", start: "أُ", middle: "ـأُ", end: "ـأُ", pron: "ou" },
+  { id: 2, base: "بُ", start: "بُـ", middle: "ـبُـ", end: "ـبُ", pron: "bou" },
+  { id: 3, base: "تُ", start: "تُـ", middle: "ـتُـ", end: "ـتُ", pron: "tou" },
+  { id: 4, base: "ثُ", start: "ثُـ", middle: "ـثُـ", end: "ـثُ", pron: "thou" },
+  { id: 5, base: "جُ", start: "جُـ", middle: "ـجُـ", end: "ـجُ", pron: "jou" },
+  { id: 6, base: "حُ", start: "حُـ", middle: "ـحُـ", end: "ـحُ", pron: "ḥou" },
+  { id: 7, base: "خُ", start: "خُـ", middle: "ـخُـ", end: "ـخُ", pron: "khou" },
+  { id: 8, base: "دُ", start: "دُ", middle: "ـدُ", end: "ـدُ", pron: "dou" },
+  { id: 9, base: "ذُ", start: "ذُ", middle: "ـذُ", end: "ـذُ", pron: "dhou" },
+  { id: 10, base: "رُ", start: "رُ", middle: "ـرُ", end: "ـرُ", pron: "rou" },
+  { id: 11, base: "زُ", start: "زُ", middle: "ـزُ", end: "ـزُ", pron: "zou" },
+  { id: 12, base: "سُ", start: "سُـ", middle: "ـسُـ", end: "ـسُ", pron: "sou" },
+  { id: 13, base: "شُ", start: "شُـ", middle: "ـشُـ", end: "ـشُ", pron: "shou" },
+  { id: 14, base: "صُ", start: "صُـ", middle: "ـصُـ", end: "ـصُ", pron: "ṣou" },
+  { id: 15, base: "ضُ", start: "ضُـ", middle: "ـضُـ", end: "ـضُ", pron: "ḍou" },
+  { id: 16, base: "طُ", start: "طُـ", middle: "ـطُـ", end: "ـطُ", pron: "ṭou" },
+  { id: 17, base: "ظُ", start: "ظُـ", middle: "ـظُـ", end: "ـظُ", pron: "ẓou" },
+  { id: 18, base: "عُ", start: "عُـ", middle: "ـعُـ", end: "ـعُ", pron: "‘ou" },
+  { id: 19, base: "غُ", start: "غُـ", middle: "ـغُـ", end: "ـغُ", pron: "ghou" },
+  { id: 20, base: "فُ", start: "فُـ", middle: "ـفُـ", end: "ـفُ", pron: "fou" },
+  { id: 21, base: "قُ", start: "قُـ", middle: "ـقُـ", end: "ـقُ", pron: "qou" },
+  { id: 22, base: "كُ", start: "كُـ", middle: "ـكُـ", end: "ـكُ", pron: "kou" },
+  { id: 23, base: "لُ", start: "لُـ", middle: "ـلُـ", end: "ـلُ", pron: "lou" },
+  { id: 24, base: "مُ", start: "مُـ", middle: "ـمُـ", end: "ـمُ", pron: "mou" },
+  { id: 25, base: "نُ", start: "نُـ", middle: "ـنُـ", end: "ـنُ", pron: "nou" },
+  { id: 26, base: "هُ", start: "هُـ", middle: "ـهُـ", end: "ـهُ", pron: "hou" },
+  { id: 27, base: "وُ", start: "وُ", middle: "ـوُ", end: "ـوُ", pron: "wou" },
+  { id: 28, base: "يُ", start: "يُـ", middle: "ـيُـ", end: "ـيُ", pron: "you" }
+];
