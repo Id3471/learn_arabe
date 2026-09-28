@@ -29,3 +29,35 @@ export const mockFatha = [
   { id: 27, base: "وَ", start: "وَ", middle: "ـوَ", end: "ـوَ", pron: "wa" },
   { id: 28, base: "يَ", start: "يَـ", middle: "ـيَـ", end: "ـيَ", pron: "ya" }
 ];
+
+// Données de la Kasra
+export const mockKasra = [
+  { id: 1, base: "إِ", start: "إِ", middle: "ـإِ", end: "ـإِ", pron: "i" },
+  { id: 2, base: "بِ", start: "بِـ", middle: "ـبِـ", end: "ـبِ", pron: "bi" },
+  { id: 3, base: "تِ", start: "تِـ", middle: "ـتِـ", end: "ـتِ", pron: "ti" },
+  { id: 4, base: "ثِ", start: "ثِـ", middle: "ـثِـ", end: "ـثِ", pron: "thi" },
+  { id: 5, base: "جِ", start: "جِـ", middle: "ـجِـ", end: "ـجِ", pron: "ji" },
+  { id: 6, base: "حِ", start: "حِـ", middle: "ـحِـ", end: "ـحِ", pron: "ḥi" },
+  { id: 7, base: "خِ", start: "خِـ", middle: "ـخِـ", end: "ـخِ", pron: "khi" },
+  { id: 8, base: "دِ", start: "دِ", middle: "ـدِ", end: "ـدِ", pron: "di" },
+  { id: 9, base: "ذِ", start: "ذِ", middle: "ـذِ", end: "ـذِ", pron: "dhi" },
+  { id: 10, base: "رِ", start: "رِ", middle: "ـرِ", end: "ـرِ", pron: "ri" },
+  { id: 11, base: "زِ", start: "زِ", middle: "ـزِ", end: "ـزِ", pron: "zi" },
+  { id: 12, base: "سِ", start: "سِـ", middle: "ـسِـ", end: "ـسِ", pron: "si" },
+  { id: 13, base: "شِ", start: "شِـ", middle: "ـشِـ", end: "ـشِ", pron: "shi" },
+  { id: 14, base: "صِ", start: "صِـ", middle: "ـصِـ", end: "ـصِ", pron: "ṣi" },
+  { id: 15, base: "ضِ", start: "ضِـ", middle: "ـضِـ", end: "ـضِ", pron: "ḍi" },
+  { id: 16, base: "طِ", start: "طِـ", middle: "ـطِـ", end: "ـطِ", pron: "ṭi" },
+  { id: 17, base: "ظِ", start: "ظِـ", middle: "ـظِـ", end: "ـظِ", pron: "ẓi" },
+  { id: 18, base: "عِ", start: "عِـ", middle: "ـعِـ", end: "ـعِ", pron: "i‘" },
+  { id: 19, base: "غِ", start: "غِـ", middle: "ـغِـ", end: "ـغِ", pron: "ghi" },
+  { id: 20, base: "فِ", start: "فِـ", middle: "ـفِـ", end: "ـفِ", pron: "fi" },
+  { id: 21, base: "قِ", start: "قِـ", middle: "ـقِـ", end: "ـقِ", pron: "qi" },
+  { id: 22, base: "كِ", start: "كِـ", middle: "ـكِـ", end: "ـكِ", pron: "ki" },
+  { id: 23, base: "لِ", start: "لِـ", middle: "ـلِـ", end: "ـلِ", pron: "li" },
+  { id: 24, base: "مِ", start: "مِـ", middle: "ـمِـ", end: "ـمِ", pron: "mi" },
+  { id: 25, base: "نِ", start: "نِـ", middle: "ـنِـ", end: "ـنِ", pron: "ni" },
+  { id: 26, base: "هِ", start: "هِـ", middle: "ـهِـ", end: "ـهِ", pron: "hi" },
+  { id: 27, base: "وِ", start: "وِ", middle: "ـوِ", end: "ـوِ", pron: "wi" },
+  { id: 28, base: "يِ", start: "يِـ", middle: "ـيِـ", end: "ـيِ", pron: "yi" }
+];
