@@ -1,23 +1,17 @@
-import { useMemo } from 'react'
+import { useArabicSpeech } from "../hooks/useArabicSpeech";
 
 // Affiche un mot arabe avec la correction phonétique.
-// En mode mixte, chaque lettre porte sa propre haraka.
-function WordCard({ word, showCorrection, mixMode = false }) {
-  const display = useMemo(() => {
-    if (mixMode) {
-      // En mode mixte, chaque syllabe porte sa propre haraka : on affiche
-      // la lettre nue + la haraka par-dessus.
-      return word.syllables
-        .map((syllable) => `${syllable.letter}${syllable.haraka}`)
-        .join('')
-    }
-    return word.text
-  }, [word, mixMode])
+// Quand la correction est visible, un bouton Écouter prononce le mot entier
+// via la synthèse vocale du navigateur (voix arabe).
+function WordCard({ word, showCorrection }) {
+  const { available, speaking, speak } = useArabicSpeech();
+
+  const handleListen = () => speak(word.text);
 
   return (
     <div className="word-card">
       <div className="word-text" lang="ar" dir="rtl">
-        {display}
+        {word.text}
       </div>
 
       {showCorrection && (
@@ -26,10 +20,25 @@ function WordCard({ word, showCorrection, mixMode = false }) {
           <span className="correction-pron" dir="ltr">
             {word.pronunciation}
           </span>
+          {available ? (
+            <button
+              type="button"
+              className={`listen-btn${speaking ? " speaking" : ""}`}
+              onClick={handleListen}
+              disabled={speaking}
+              aria-label={`Écouter le mot ${word.pronunciation}`}
+            >
+              {speaking ? "🔊 Lecture…" : "🔊 Écouter"}
+            </button>
+          ) : (
+            <span className="listen-unavailable">
+              Voix arabe indisponible sur cet appareil
+            </span>
+          )}
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default WordCard
+export default WordCard;
