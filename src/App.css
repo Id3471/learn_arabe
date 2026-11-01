@@ -92,6 +92,58 @@
   font-style: italic;
 }
 
+/* ===== Choix de la difficulté ===== */
+
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.difficulty-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 150px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.difficulty-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.difficulty-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.difficulty-name {
+  color: var(--text-h);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.difficulty-summary {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* ===== Page longueur : compteur ===== */
 
 .length-picker {
@@ -201,6 +253,14 @@
   border: 1px solid var(--accent-border);
 }
 
+.learning-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
 .correction-label {
   font-size: 12px;
   text-transform: uppercase;
@@ -212,6 +272,79 @@
   font-family: var(--mono);
   font-size: 26px;
   color: var(--text-h);
+}
+
+.pronunciation-tips,
+.quranic-example {
+  width: min(100%, 520px);
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.pronunciation-tips h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.pronunciation-tips ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.pronunciation-tips li {
+  padding-left: 2px;
+  line-height: 1.5;
+}
+
+.pronunciation-tips strong {
+  display: block;
+  color: var(--text-h);
+}
+
+.quranic-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-bg);
+  border-color: var(--accent-border);
+  text-align: center;
+}
+
+.quranic-example-label {
+  color: var(--text-h);
+  font-weight: 600;
+}
+
+.quranic-connection {
+  line-height: 1.5;
+}
+
+.quranic-connection [lang='ar'] {
+  color: var(--text-h);
+  font-size: 21px;
+}
+
+.quranic-example-text {
+  color: var(--text-h);
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.quranic-example p {
+  line-height: 1.5;
+}
+
+.quranic-source {
+  color: var(--accent);
+  font-size: 13px;
 }
 
 /* ===== Bouton Écouter ===== */
@@ -322,6 +455,14 @@
   .mode-grid {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+  }
+
+  .difficulty-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .difficulty-card {
+    min-height: auto;
   }
 
   .length-picker {

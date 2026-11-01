@@ -1,4 +1,4 @@
-import { MODES } from '../data/mockModes'
+import { MODES } from '../data/modes'
 
 function WelcomePage({ onSelectMode }) {
   return (
@@ -6,8 +6,8 @@ function WelcomePage({ onSelectMode }) {
       <p className="eyebrow">تعلم القراءة</p>
       <h1>Apprendre à lire l&rsquo;arabe</h1>
       <p className="lead">
-        Reconnaître chaque lettre de l&rsquo;alphabet arabe, seule ou dans un mot,
-        avec les voyelles courtes. Choisis un mode pour commencer&nbsp;:
+        Reconnaître les lettres arabes et apprendre à lire leurs voyelles et
+        leurs signes. Choisis un mode pour commencer&nbsp;:
       </p>
 
       <div className="mode-grid">

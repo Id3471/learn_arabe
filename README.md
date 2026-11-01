@@ -1,27 +1,38 @@
 # Learn Arabe
 
-Application pédagogique interactive pour apprendre les lettres et les voyelles courtes de l’alphabet arabe.
+Application pédagogique interactive pour apprendre à reconnaître et prononcer les lettres et les signes de lecture arabes.
 
-Le projet propose une expérience simple et visuelle : l’utilisateur choisit un mode d’apprentissage, fixe la longueur du mot à générer, puis observe la lettre ou le mot arabe avec une correction phonétique.
+Le projet propose une expérience simple et visuelle : l’utilisateur choisit un mode, une difficulté et le nombre de lettres, puis lit une suite générée et consulte sa correction phonétique.
 
 ## À propos du projet
 
 Learn Arabe est une petite application React développée avec Vite. Elle a pour objectif d’aider à pratiquer :
 
 - la reconnaissance des lettres arabes ;
-- la lecture des voyelles courtes comme la fatha ;
-- la prononciation de mots composés à partir d’un alphabet modélisé.
+- la lecture des voyelles brèves et longues, du soukoun, du tanwin et de la chadda ;
+- la prononciation de suites de lettres générées pour l’exercice ;
+- le repérage de quelques formes orthographiques coraniques contextualisées.
 
 ## Fonctionnalités
 
 - écran d’accueil avec plusieurs modes disponibles et à venir ;
-- mode Fatha activé par défaut ;
-- choix de la longueur d’un mot (de 1 à 10 lettres) ;
-- génération aléatoire de mots à partir des données de lettres ;
+- modes Fatha, Kasra, Damma et Mix ;
+- choix d’une difficulté facile, moyenne ou difficile ;
+- choix de la longueur d’une suite (de 1 à 10 lettres de base) ;
+- génération aléatoire à partir d’une liste centrale de lettres et de signes combinables ;
 - affichage du mot arabe avec rendu RTL ;
-- correction phonétique affichée au clic ;
+- correction phonétique, synthèse vocale arabe et conseils de prononciation affichés au clic ;
+- au niveau difficile, exemple coranique choisi en fonction d’un signe réellement présent dans la suite de l’exercice ;
 - navigation simple entre les étapes de l’application ;
 - design responsive adapté à l’écran.
+
+### Niveaux
+
+- **Facile** : conserve le fonctionnement initial et pratique la voyelle du mode choisi.
+- **Moyen** : ajoute les deux notations du soukoun, la voyelle longue liée au mode, son tanwin et la chadda.
+- **Difficile** : reprend le niveau moyen et présente en plus un exemple coranique contextualisé au signe travaillé dans la suite.
+
+Les exercices générés sont des suites de lettres destinées à l’entraînement, pas des mots arabes attestés. La longueur compte les lettres de base ; les lettres de prolongation servant à écrire une voyelle longue ne sont pas incluses. Au niveau difficile, l’extrait coranique est sélectionné selon une voyelle ou un signe présent dans la suite affichée. Les signes et conventions peuvent varier selon l’édition du muṣḥaf et la lecture.
 
 ## Stack technique
 
@@ -99,7 +110,7 @@ learn_arabe/
 
 ### Dossiers principaux
 
-- `src/data` : données des lettres et des modes d’apprentissage ;
+- `src/data` : alphabet central, voyelles, modes, difficultés et exemples ;
 - `src/pages` : écrans de l’application ;
 - `src/components` : composants réutilisables comme la carte de mot ;
 - `src/utils` : logique de génération des mots ;
@@ -110,14 +121,14 @@ learn_arabe/
 
 Le cœur du projet repose sur :
 
-1. la sélection d’un mode d’apprentissage ;
-2. la définition d’une longueur de mot ;
-3. la génération aléatoire de syllabes avec voyelles courtes ;
-4. l’affichage de la bonne prononciation après validation.
+1. la sélection d’un mode, puis d’une difficulté ;
+2. la définition d’une longueur en lettres ;
+3. la génération d’une suite avec les signes permis par le mode et la difficulté ;
+4. l’affichage de la prononciation, d’un conseil associé et, au niveau difficile, d’un exemple contextualisé.
 
 ## État actuel
 
-Le projet est fonctionnel en version d’exploration pédagogique et met en place le mode Fatha comme première étape d’apprentissage. Les autres modes sont préparés et peuvent être activés progressivement.
+Le projet est fonctionnel en version d’exploration pédagogique. Les suites générées servent à pratiquer le décodage des signes ; elles ne remplacent pas l’apprentissage du vocabulaire, des règles complètes de tajwīd ou la lecture d’un muṣḥaf avec un enseignant.
 
 ## Contribution
 
